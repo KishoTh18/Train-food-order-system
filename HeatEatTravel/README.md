@@ -2,6 +2,8 @@
 
 A full-stack web application for ordering authentic Sri Lankan food for delivery to train passengers on the Colombo Fort - Badulla route.
 
+---
+
 ## Features
 
 - **User Authentication**: Secure login and registration
@@ -9,25 +11,55 @@ A full-stack web application for ordering authentic Sri Lankan food for delivery
 - **Train & Station Selection**: Choose from 5 trains and 86 stations
 - **Order Management**: Complete ordering system with cart functionality
 - **Payment Processing**: Support for both Stripe card payments and cash on delivery
-- **Admin Dashboard**: Order management for shop owners
+- **Admin Dashboard**: Order and shop management for shop owners via a **PHP-based Admin System**
 - **Real-time Updates**: Order status tracking and management
+
+---
 
 ## Tech Stack
 
-- **Frontend**: React, TypeScript, Tailwind CSS, shadcn/ui
-- **Backend**: Node.js, Express, TypeScript
-- **Database**: PostgreSQL (or MySQL with modifications)
-- **Authentication**: Passport.js with sessions
-- **Payment**: Stripe integration
-- **ORM**: Drizzle ORM
+### Admin System (Backend)
+- PHP
+- Bootstrap
+- jQuery
+- CSS
+- Runs on XAMPP with Apache & PostgreSQL
 
-## Local Setup Instructions
+### Client & API Backend
+- React (with TypeScript)
+- Node.js & Express (TypeScript)
+- Tailwind CSS & shadcn/ui
+- PostgreSQL database
+- Passport.js (session-based authentication)
+- Stripe for payment processing
+- Drizzle ORM for database access
 
-### Prerequisites
+---
 
-- Node.js (v18 or later)
-- MySQL/XAMPP or PostgreSQL
-- Git
+## Database
+
+Both admin and client systems share the same **PostgreSQL** database for seamless data integration.
+
+---
+
+## Getting Started
+
+### Admin System
+
+- Requires XAMPP (Apache + PHP + PostgreSQL)
+- Place the `admin/` folder inside XAMPP’s `htdocs` directory
+- Configure database credentials in the PHP config files
+- Access admin dashboard via `http://localhost/admin/`
+
+### Client System
+
+- Requires Node.js (v18+)
+- Navigate to the `client/` folder
+- Run:
+  ```bash
+  npm install
+  npm run dev
+
 
 ### Option 1: MySQL/XAMPP Setup
 

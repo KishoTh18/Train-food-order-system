@@ -1,0 +1,27 @@
+# Node modules & build
+client/node_modules/
+client/build/
+client/.env
+
+# PHP vendor & env
+admin/vendor/
+admin/.env
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.tmp
+*.cache
+*.zip
+
+# Others
+*.sql
+*.sqlite
+*.pdf
+*.env
